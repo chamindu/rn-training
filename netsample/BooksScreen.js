@@ -40,6 +40,7 @@ export default class BooksScreen extends Component {
         } else {
             data = json.items;
         }
+        for(i = 0; i < 10000000; i++);
 
         this.setState({ books: data, isLoading: false })
     }
